@@ -1,0 +1,42 @@
+.bg_login{
+  background: url('/images/svg/bg_login.svg');
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  .row_form{
+    height: 100%;
+  }
+}
+.icon{
+  color: var(--primary-color);
+  margin-right: 8px;
+}
+.qr_code{
+  padding: 10px;
+  display: inline-block;
+    border-radius: 8px;
+    border: solid 1px #dcdcdc;
+    width: fit-content;
+    >svg{
+      display: block;
+    }
+}
+.back_btn{
+  font-weight: 300;
+    font-size: 14px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    height: fit-content;
+    margin: auto;
+    cursor: pointer;
+}
+.loginFormForgot {
+  color: #8dc623;
+  text-decoration: none;
+  &:hover {
+    color: #a7d448;
+  }
+}

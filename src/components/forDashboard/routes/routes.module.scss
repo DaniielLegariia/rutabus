@@ -1,0 +1,228 @@
+.title_card {
+  margin: 0px;
+  display: inline-block;
+  font-size: initial;
+  font-weight: 500;
+}
+
+.step {
+  width: 15px;
+  height: 15px;
+  border: solid 2px #bbbbbb;
+  border-radius: 100%;
+  margin: auto;
+  position: relative;
+  background: #fff;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  padding-top: 0.4rem;
+   
+  &.in{
+    background: #f3bf14;
+    border-color: #f3bf14;
+  }
+}
+
+
+.stepLabelBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.steps_box {
+  display: flex;
+  width: 100%;
+  margin: 1.5rem 0rem 2.5rem 0rem;
+  padding: 0rem 33px;
+  position: relative; // Contenedor relativo para posiciones absolutas
+}
+
+.last {
+  flex:0.5;
+  
+  >div {
+    float: left;
+    bottom: -16px
+  }
+}
+
+.exceededTimeInStep {
+  cursor: pointer;
+  position: absolute;
+  right: auto;
+  bottom: -41px;
+    left: auto;
+    &:after{
+      content: "";
+      width: 14px;
+      z-index: 1;
+      right: 0px;
+      margin: auto;
+    }
+}
+
+.exceededTimeInTransitFirstStep {
+  bottom: -41px;
+}
+
+.ontime{
+  &:after{
+    border-bottom: solid 5px #008000 !important;
+  }
+  background: #008000;
+}
+
+.arrivedtodestination{
+  &:after{
+    border-bottom: solid 5px #008000 !important;
+  }
+  background: #008000;
+}
+
+.delay{
+  &:after{
+    border-bottom: solid 5px #F3BF15 !important;
+  }
+  background: #F3BF15;
+}
+
+.late{
+  &:after{
+    border-bottom: solid 5px #F14854 !important;
+  }
+  background: #F14854;
+}
+
+.assignedVehiclesCont {
+  margin-left: 1rem;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.vehicleWithExceededTime {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.card {
+  margin-bottom: 15px;
+  border-radius: 1.2rem;
+  box-shadow: 0px 0px 13px 0px rgb(0 0 0 / 30%);
+  min-height: 9.5rem;
+}
+
+.addButton {
+  align-items: end;
+  justify-content: center;
+  height: 2.5rem;
+  margin-right: 1rem;
+}
+
+.lastStepCont {
+  justify-content: right !important;
+}
+
+.divChild {
+  span {
+    padding: 0px !important;
+  }
+}
+
+.bus {
+  position: static;
+  bottom: 60px;
+  left: -7px;
+  cursor: pointer;
+}
+
+.busInTransit {
+  position: relative;
+  bottom: 55px;
+  right: -5px;
+  margin: auto;
+  width: 25px;
+  height: 23px;
+  cursor: pointer;
+}
+
+.busInFirstTransit {
+  right: -5.5px !important;
+}
+
+.inTransit {
+  width: 15px;
+  height: 6px;
+  margin: auto;
+  position: relative;
+  bottom: 46.5px;
+  left: 5px;
+}
+
+.exceededTime {
+  position: relative;
+  left: -99px !important;
+  top: -46px;
+  right: -19px;
+  margin: auto;
+  width: 50px;
+  height: 23px;
+}
+
+.exceededTimeInFirstStep {
+  right: auto;
+}
+
+.exceededTimeInStep {
+  right: auto;
+  left: -21px !important;
+}
+
+.exceededTimeInTransit {
+  left: -10px !important;
+  top: 30px !important;
+}
+
+.stepNameCont {
+  position: absolute;
+  bottom: 15px;
+  left: -35px;
+  text-align: center;
+}
+
+.stepName {
+  height: auto;
+  width: 5rem;
+  line-height: 10.0rem;
+  margin-bottom: 0 !important;
+  text-align: center;
+  white-space: nowrap;      // evita el salto de línea
+  text-overflow: ellipsis;  // agrega "..." si se desborda
+//  overflow: hidden;         // oculta el texto que se sale
+}
+
+
+.stepName2 {
+  height: 2rem;
+  width: 5rem;
+  line-height: 1.1;
+  margin-bottom: 0 !important;
+  overflow: hidden
+}
+
+
+.stepEta {
+  font-size: 0.85em;
+  color: #888;
+  margin-top: 0.2em; // Usa un valor positivo para separar hacia abajo
+  width: 100%;
+  text-align: center;
+  position: static;
+  margin-left: -6.5rem; // Prueba con -1rem, -2rem, etc. hasta que quede alineado visualmente con el punto
+}
+
+

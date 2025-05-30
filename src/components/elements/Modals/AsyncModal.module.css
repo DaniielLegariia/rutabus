@@ -1,0 +1,16 @@
+.customTitle {
+    width: 95%;
+}
+
+.searchStyle {
+    margin-bottom: 0.5rem;
+}
+
+.textTitleStyle {
+    font-size: 15px;
+}
+
+.customFooter {
+    display: flex;
+    justify-content: space-between;
+}

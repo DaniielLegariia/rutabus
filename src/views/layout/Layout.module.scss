@@ -1,0 +1,56 @@
+.user_info{
+  display: flex;
+  float: right;
+  box-sizing: content-box;
+  height: 64px;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  right: 50px;
+  
+  >.avatar{ 
+    background-color: #2f98b7;
+    cursor: pointer;
+  }
+  >div{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 0px 0px 10px;
+    cursor: pointer;
+    >span{
+      line-height: 1;
+      cursor: pointer;
+      color: rgb(107, 107, 107);
+      &:first-child{
+        margin-bottom: 4px;
+        color: #6B778C;
+      }
+    }
+  } 
+}
+.sider{
+  border-right: solid 1px #f0f2f6;
+}
+.layout_container{
+  padding: 20px 30px;
+}
+.logout_menu{
+  background: #f8f9f9;
+  border-top: solid 1px #d6dde2;
+  padding: 11px 15px !important;
+}
+.sidemenu{
+  height: '100%'; 
+  border-right: 0px;
+  background: #fafbfc;
+}
+.logo{
+  float: left;
+  margin: 7px 0px;
+  display: flex;
+  height: 50px;
+}
+.header{
+  box-shadow: 2px 2px 8px rgb(0 0 0 / 8%);
+  z-index: 1;
+}

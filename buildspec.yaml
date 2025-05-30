@@ -1,0 +1,15 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: latest
+    commands:
+      - cd "$CODEBUILD_SRC_DIR"
+      - npm install
+      - chmod a+x *.sh
+      - cp ./build.sh /usr/bin
+
+  build:
+    commands:
+      - build.sh
